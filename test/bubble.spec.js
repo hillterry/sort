@@ -1,9 +1,9 @@
 import { bubbleSort } from '../src/bubble'
-
+import * as sortData from './sortData'
 describe('bubble sort', () => {
     it('sort by bubble', () => {
-        //[1,3,4,6,9]
-        expect(bubbleSort([1, 4, 6, 9, 3])).toEqual([1, 3, 4, 6, 9]);
-        expect(bubbleSort([56, 634, 2, 46, 57, 32])).toEqual([2, 32, 46, 56, 57, 634])
+        expect(bubbleSort(sortData.sortData[0])).toEqual(sortData.sortedData[0]);
+        expect(bubbleSort(sortData.sortData[1])).toEqual(sortData.sortedData[1]);
+        expect(bubbleSort(sortData.sortData[2])).toEqual(sortData.sortedData[2]);
     });
 });
